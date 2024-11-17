@@ -12,66 +12,90 @@
     <video id="videofondo" src="videos/457524_Drone Mountains_Drone_1920x1080.mp4" loop autoplay muted></video>
     <div id="wrapper">
         <div id="header">
-            <img id="logoencabezado" src="images/aramon_logonegro-vmake.png" alt="logo_aragon">
+            <img id="logoencabezado" src="images/aramon-logo.png" alt="logo_aragon">
         </div>    
-        <!-- MENU -->
+        <!-- Menú -->
         <nav id='menu'>
             <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
             <ul>
-                <li><a href='proyecto.html'>Inicio </a></li>
+                <li><a href='proyecto.html'>Inicio</a></li>
                 <li><a class='dropdown-arrow' href='formigal.html'>Información</a>
                     <ul class='sub-menus'>
                         <li><a href='formigal.html'>Formigal</a></li>
-                        <li><a href='http://'>Panticosa</a></li>
-                        <li><a href='http://'>Cerler</a></li>
-                        <li><a href='http://'>Valderlinares</a></li>
-                        <li><a href='http://'>Javalambre</a></li>
+                        <li><a href='panticosa.html'>Panticosa</a></li>
+                        <li><a href='cerler.html'>Cerler</a></li>
+                        <li><a href='valdelinares.html'>Valdelinares</a></li>
+                        <li><a href='javalambre.html'>Javalambre</a></li>
                     </ul>
                 </li>
-                <li><a class='dropdown-arrow' href='http://'>Galería</a>
+                <li><a href='imagenes.html'>Galería</a>
                     <ul class='sub-menus'>
-                        <li><a href='http://'>Fotos</a></li>
-                        <li><a href='http://'>Videos</a></li>
+                        <li><a href='imagenes.html'>Fotos</a></li>
+                        <li><a href='videos.html'>Videos</a></li>
                     </ul>
                 </li>
-                <li><a href='tarifa.html'>Tarifas</a></li>
-                <li><a href='http://'>Formulario de contacto</a></li>
+                <li><a href='tarifas_aramon.html'>Tarifas</a></li>
+                <li><a href='formularios.html'>Formulario de contacto</a></li>
             </ul>
         </nav>
         <div id="content">
             <h1>Tarifas</h1>
             <p>Consulta las tarifas para las diferentes estaciones de esquí:</p>
             <table>
-                <caption>Precios de acceso a estaciones por temporada</caption>
+                <caption>Tarifas de estancias en albergues por estación</caption>
                 <thead>
                     <tr>
-                        <th scope="col">Temporada</th>
-                        <th scope="col">Precio Adulto</th>
-                        <th scope="col">Precio Infantil</th>
-                        <th scope="col">Precio Senior</th>
+                        <th scope="col">Estación de esquí</th>
+                        <th scope="col">Lugar de estancia</th>
+                        <th scope="col">Tiempo de estancia</th>
+                        <th scope="col">Precio por estancia</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Temporada Baja</td>
-                        <td>25€</td>
-                        <td>15€</td>
-                        <td>20€</td>
+                        <td rowspan="2">Estación de Cerler</td>
+                        <td>Albergue del misterio</td>
+                        <td>4 noches + 3 días de forfait</td>
+                        <td>150€</td>
                     </tr>
                     <tr>
-                        <td>Temporada Media</td>
-                        <td>35€</td>
-                        <td>20€</td>
-                        <td>30€</td>
-                    </tr>
-                    <tr>
-                        <td>Temporada Alta</td>
+                        <td>Albergue del pájaro loco</td>
+                        <td>2 noches + 1 día de forfait</td>
                         <td>50€</td>
-                        <td>30€</td>
-                        <td>40€</td>
+                    </tr>
+                    <!-- Repite el patrón para las demás estaciones -->
+                    <tr>
+                        <td>General</td>
+                        <td>Aleatorio</td>
+                        <td>4 noches + 3 días de forfait</td>
+                        <td>100€</td>
                     </tr>
                 </tbody>
             </table>
+        </div>         
+        <!-- Footer -->
+        <div id="footer">
+            <footer>
+                <div class="footer-section">
+                    <h3>Información de contacto</h3>
+                    <ul>
+                        <li><span class="icon-mobile-phone">620 110 785</span></li>
+                        <li><span class="icon-email">info@aramon.es</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Síguenos en:</h3>
+                    <ul>
+                        <li><span class="icon-twitter"><a href="https://x.com/grupoaramon?lang=es" target="_blank">Twitter</a></span></li>
+                        <li><span class="icon-facebook"><a href="https://www.facebook.com/formigal.panticosa.aramon/?locale=es_ES" target="_blank">Facebook</a></span></li>
+                    </ul>
+                </div>
+
+                <div id="copy">
+                    <p>&copy; Aramon. Todos los derechos reservados.</p>
+                </div>
+            </footer>
         </div>
     </div>
 </body>
